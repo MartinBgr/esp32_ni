@@ -3,7 +3,7 @@
 from machine import Pin
 import dht
 
-d = dht.DHT22(Pin(25))
+d = dht.DHT22(Pin(11))
 d.measure()
 temperatura=d.temperature()
 print(f"la temperatura actual es de {temperatura} *C")
